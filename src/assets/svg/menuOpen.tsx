@@ -1,7 +1,21 @@
-export default function MenuOpen({ isOpen, toggleMenu }) {
+import React from "react";
+
+type MenuOpenProps = {
+    isOpen: boolean;
+    toggleMenu: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+export default function MenuOpen({ isOpen, toggleMenu }: MenuOpenProps) {
     return (
-        <button onClick={() => toggleMenu(prev => !prev)}>
-            <svg width="25" height="25" viewBox="0 0 24 24" stroke="black" strokeWidth="2">
+        <button title="button" onClick={() => toggleMenu((prev) => !prev)}>
+            <svg
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke="black"
+                strokeWidth="2"
+                fill="none"
+            >
                 {isOpen ? (
                     <>
                         <line x1="18" y1="6" x2="6" y2="18" />

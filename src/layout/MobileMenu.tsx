@@ -1,4 +1,4 @@
-import CloseIcon from "../assets/svg/close";
+import CloseIcon from "../assets/svg/close.tsx";
 import { NavLink } from "react-router-dom";
 
 interface Props {
@@ -33,12 +33,12 @@ export default function MobileMenu({ isOpen, onClose }: Props) {
     return (
         <>
             {/* Overlay */}
-            <div
+            {/* <div
                 onClick={onClose}
-                className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-100
+                className={`fixed inset-0 bg-white backdrop-blur-sm z-100
     transition-opacity duration-300 ease-out
     ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
-            />
+            /> */}
 
             {/* Menu */}
             <div

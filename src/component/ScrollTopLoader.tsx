@@ -24,7 +24,7 @@ export default function ScrollTopLoader() {
         const duration = 500;
         const startTime = performance.now();
 
-        const animateScroll = (currentTime) => {
+        const animateScroll = (currentTime: number): void => {
             const timeElapsed = currentTime - startTime;
             const progress = Math.min(timeElapsed / duration, 1);
 

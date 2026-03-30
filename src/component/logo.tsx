@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import HeartIcon from "../assets/svg/logo";
+import HeartIcon from "../assets/svg/logo.tsx";
 
 const Logo = () => {
 
